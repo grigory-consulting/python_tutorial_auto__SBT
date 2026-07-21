@@ -79,3 +79,51 @@ def everything(a, b=1, *args, **kwargs):
     print("kwargs", kwargs)
 
 everything(3,70, 4,5,5,6,7,5,4,6, Name = "Anna", Street = "Street" , y = [])
+
+
+
+# scope 
+
+count = 0
+
+
+def increase():
+    global count
+    count += 1 
+
+increase()
+print(count)
+
+
+def outer():
+    x = "outer value"
+    
+    def inner():
+        nonlocal x # same as in global but inside of function 
+        x = "x was changed"
+    
+    inner()
+    print(x)
+
+outer()
+
+
+
+# decorator 
+
+def changecase(func): 
+    var = "X"
+    def myinner():
+        nonlocal var
+        return var + func().upper()
+    return myinner 
+
+@changecase
+def my_function():
+    return "Hello World!"
+
+print(my_function())
+
+
+
+
