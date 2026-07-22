@@ -125,5 +125,65 @@ def my_function():
 print(my_function())
 
 
+# Higher-Order Function 
+
+def add_five(x):
+    return x + 5 
+
+def do_twice(func, arg): # repeat the function application twice (function has one parameter and one return value)
+    return func(func(arg)) 
+
+print(do_twice(add_five,3))
+
+# Closure 
+
+def multiplier(factor):
+    def multiply(number):
+        return number*factor
+    return multiply # Return a function!!!! 
+
+double = multiplier(2)
+print(double(14))
+
+triple = multiplier(3)
+print(triple(4))
 
 
+# Lambdas 
+
+square = lambda x: x*x # anonymous function (function without name/name is optional)
+
+print(square(5))
+
+
+mul = lambda x,y: x*y  # two parameters
+print(mul(4,5))
+
+
+nums = [1,2,3,4,5]
+res = map(lambda x: x+x, nums) # map means apply function to all values in the list 
+# and create a new list 
+
+print(list(res)) 
+
+# more typical however in Python is list comprehension 
+
+res = [num+num for num in nums] 
+
+nums2 = [10,20,30,40,50]
+
+res = list(map(lambda x,y: x+y,nums, nums2))
+print(res)
+
+
+evens = list(filter(lambda x: x % 2 == 0, nums)) # modul two = 0 -> integer is even
+print(evens)
+
+evens = [num for num in nums if num % 2 == 0]
+print(evens)
+
+# old-school reduce 
+from functools import reduce 
+
+prod = reduce(lambda x,y: x*y, nums)
+print(prod) # 1*2*3*4*5 
