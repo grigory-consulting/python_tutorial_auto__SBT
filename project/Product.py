@@ -8,13 +8,14 @@ class Product:
         self.name = name
         self.price = price 
         self.stock = stock 
+    
 
     #def __str__(self): # for print (humans)
         #pass
     #    return "This my cool product"
 
-    #def __repr__(self): # print for containers/other modules 
-    #    return f"Product(id={self.id}, name={self.name}, price={self.price}, stock={self.stock})"
+    def __repr__(self): # print for containers/other modules 
+        return f"Product(id={self.id}, name={self.name}, price={self.price}, stock={self.stock})"
 
     def buy(self, quantity):
         if self.stock>= quantity:
