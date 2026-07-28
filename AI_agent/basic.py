@@ -104,6 +104,53 @@ def demo_structured_output():
     print(order["quantity"], type(order["quantity"]))
 
 
+def demo_tool_calling(): 
+
+    def get_current_time():
+        from datetime import datetime
+        return datetime.now().strftime("%Y-%m-%d %H:%M")
+
+    available_tools = {"get_current_time": get_current_time}
+    
+    tools = [
+        {
+            "type": "function",
+            "function": {
+                "name" : "get_current_time",
+                "description": "Return the current local date and time",
+                "parameters": {"type": "object", "properties": {}},
+            }
+        }
+    ]
+
+    messages = [
+        {"role": "system", "content": "You are helpful assistant."},
+        {"role": "user", "content": "What time is it right now?"}
+    ]
+
+    response = client.chat.completions.create(
+        model= "qwen3-0.6b",
+        messages=messages,
+        tools=tools, 
+        temperature=0.0,
+    )
+    msg = response.choices[0].message
+    #print(msg.tool_calls[0].function.name)
+    #print(msg.tool_calls[0].function.arguments)
+    result = available_tools[msg.tool_calls[0].function.name]() # () -> actual function call
+
+    messages.append(msg)
+    messages.append({"role": "tool", "tool_call_id": msg.tool_calls[0].id, "content": result} )
+
+    response = client.chat.completions.create(
+        model="qwen3-0.6b", messages=messages, tools=tools, temperature=0.0)
+    print(f"final answer:   {response.choices[0].message.content}")
+
+
+def summary_extraction():
+    # TODO
+    # Extract important dates and information structurally from the given text
+    text = "The Silent Parade was a protest march in New York City on July 28, 1917. The goal was to draw attention to the racial violence and entrenched systemic discrimination endured by African Americans. The march was precipitated by racially motivated attacks in 1916 and 1917, including the East St. Louis massacre, and lynchings in Waco and in Memphis. The parade was organized by a coalition of African-American groups, led by the recently formed NAACP. Starting at 57th Street, the parade route proceeded down Fifth Avenue, ending at Madison Square. It was a silent procession, with an estimated 8,000 to 15,000 African Americans marching in protest, accompanied by a muffled drumbeat. Organizers hoped that the parade would prompt the federal government to enact anti-lynching legislation, but President Woodrow Wilson did not act on their demands. Lynchings persisted in the United States into the 1960s. "
 
 
 main()
@@ -111,3 +158,4 @@ main()
 #demo_in_context()
 #demo_temperature()
 #demo_structured_output()
+demo_tool_calling()
