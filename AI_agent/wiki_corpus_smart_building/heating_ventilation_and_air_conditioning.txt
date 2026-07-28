@@ -1,0 +1,262 @@
+Heating, ventilation, and air conditioning
+Source: https://en.wikipedia.org/wiki/Heating,_ventilation,_and_air_conditioning
+License: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+======================================================================
+
+Heating, ventilation, and air conditioning (HVAC ) systems regulate temperature, humidity, and indoor air quality in vehicles and buildings. They are designed to provide thermal comfort and to control airborne contaminants through heating, cooling, ventilation, filtration, and humidity control. HVAC design considerations include energy efficiency, indoor air quality, maintenance, and environmental impact, particularly in green building projects. In building design, mechanical, electrical, and plumbing engineers may integrate HVAC systems with other building systems (i.e. air-source heat pump water heaters) and use energy modeling to evaluate performance and operating costs.
+
+
+== Summary ==
+The three major functions of heating, ventilation, and air conditioning are intertwined. HVAC systems can provide ventilation and maintain pressure relationships between spaces. The means of air delivery and removal from spaces is known as room air distribution.
+
+
+=== Individual systems ===
+
+In modern buildings, the design, installation, and control systems of these functions are integrated into one or more HVAC systems. For very small buildings, contractors normally estimate the capacity and type of system needed and then design the system, selecting the appropriate refrigerant and various components needed. For larger buildings, building service designers, mechanical engineers, or building services engineers analyze, design, and specify the HVAC systems. Specialty mechanical contractors and suppliers then fabricate, install, and commission the systems. Building permits and code-compliance inspections of the installations are normally required for all sizes of buildings.
+
+
+=== District networks ===
+Although HVAC is executed in individual buildings or other enclosed spaces (like NORAD's underground headquarters), the equipment involved is in some cases an extension of a larger district heating (DH) or district cooling (DC) network, or a combined DHC (District-Heating-Cooling) network. In such cases, the operating and maintenance aspects are simplified, and metering becomes necessary to bill for the energy that is consumed and, in some cases, energy that is returned to the larger system. For example, at a given time, one building may be utilizing chilled water for air conditioning, and the warm water it returns may be used in another building for heating or for the overall heating-portion of the DHC network (likely with energy added to boost the temperature).
+Basing HVAC on a larger network helps provide an economy of scale that is often not possible for individual buildings, for utilizing renewable energy sources such as solar heat, winter's cold, the cooling potential in some places of lakes or seawater for free cooling, and the enabling function of seasonal thermal energy storage. 
+
+
+== History ==
+
+HVAC is based on inventions and discoveries made by Nikolay Lvov, Michael Faraday, Rolla C. Carpenter, Willis Carrier, Edwin Ruud, Reuben Trane, James Joule, William Rankine, Sadi Carnot, Alice Parker and many others.
+Multiple inventions within this time frame preceded the beginnings of the first comfort air conditioning system, which was designed in 1902 by Alfred Wolff (Cooper, 2003) for the New York Stock Exchange, while Willis Carrier equipped the Sacketts-Wilhems Printing Company with the process AC unit the same year. Coyne College was the first school to offer HVAC training in 1899. The first residential AC was installed by 1914, and by the 1950s there was "widespread adoption of residential AC".
+
+
+== Heating ==
+
+Heating is the process of transferring thermal energy to an enclosed space in order to raise or maintain its temperature for the comfort of its occupants. In central heating systems, a central source such as a boiler, furnace, or heat pump supplies thermal energy at a central location, and air, water, or steam transfers that energy to the spaces to be heated, where it is delivered by convection, radiation, or both. Small space heaters may also be used to heat individual rooms.
+
+
+=== Generation ===
+
+Heaters exist for various types of fuel, including solid fuels, liquids, and gases. Another type of heat source is electricity, normally heating ribbons composed of high resistance wire (see Nichrome). This principle is also used for baseboard heaters and portable heaters. Electrical heaters are often used as backup or supplemental heat for heat pump systems.
+The heat pump gained popularity in the 1950s in Japan and the United States. Heat pumps can extract heat from various sources, such as environmental air, exhaust air from a building, or from the ground. Heat pumps transfer heat from outside the structure to the air inside. Initially, heat pump HVAC systems were only used in moderate climates, but with improvements in low temperature operation and reduced loads due to more efficient homes, they are increasing in popularity in cooler climates. They can also operate in reverse to cool an interior.
+
+
+=== Distribution ===
+
+
+==== Water/steam ====
+In the case of heated water or steam, piping is used to transport the heat to the rooms. Most modern hot water boiler heating systems have a circulator, which is a pump, to move hot water through the distribution system (as opposed to older gravity-fed systems). The heat can be transferred to the surrounding air using radiators, hot water coils (hydro-air), or other heat exchangers. The radiators may be mounted on walls or installed within the floor to produce floor heat.
+The use of water as the heat transfer medium is known as hydronics. The heated water can also supply an auxiliary heat exchanger to supply hot water for bathing and washing.
+
+
+==== Air ====
+
+Warm air systems distribute the heated air through ductwork systems of supply and return air through metal or fiberglass ducts. Many systems use the same ducts to distribute air cooled by an evaporator coil for air conditioning. The air supply is normally filtered through air filters to remove dust and pollen particles.
+
+
+=== Dangers ===
+The use of furnaces, space heaters, and boilers as a method of indoor heating can result in incomplete combustion and the emission of carbon monoxide, nitrogen oxides, formaldehyde, volatile organic compounds, and other combustion byproducts. Incomplete combustion occurs when there is insufficient oxygen; the inputs are fuels containing various contaminants and the outputs are harmful byproducts, such as carbon monoxide, a tasteless and odorless gas with serious adverse health effects.
+
+
+== Ventilation ==
+
+Ventilation is the process of changing or replacing air in any space to control the temperature or remove any combination of moisture, odors, smoke, heat, dust, airborne bacteria, or carbon dioxide, and to replenish oxygen. Different methods, such as natural ventilation through windows and mechanical ventilation systems, can be used depending on the building design and air quality needs. Ventilation often refers to the intentional delivery of outside air to an indoor space to maintain acceptable air quality in buildings.
+The effectiveness of ventilation depends on both indoor and outdoor air quality conditions, as well as on factors such as health impacts and energy demand. Where outdoor air pollution would degrade indoor air quality, additional treatment measures, such as air filtration, may be necessary.
+Methods for ventilating a building may be divided into mechanical/forced and natural types.
+
+
+=== Mechanical or forced ===
+
+Mechanical, or forced, ventilation is provided by an air handler (AHU) and used to control indoor air quality. Excess humidity, odors, and contaminants can often be controlled via dilution or replacement with outside air. However, in humid climates more energy is required to remove excess moisture from ventilation air.
+Kitchens and bathrooms typically have mechanical exhausts to control odors and sometimes humidity. Factors in the design of such systems include the flow rate (which is a function of the fan speed and exhaust vent size) and noise level. Direct drive fans are available for many applications and can reduce maintenance needs.
+In summer, ceiling fans and table/floor fans circulate air within a room for the purpose of reducing the perceived temperature by increasing evaporation of perspiration on the skin of the occupants. Because hot air rises, ceiling fans may be used to keep a room warmer in the winter by circulating the warm stratified air from the ceiling to the floor.
+
+
+=== Passive ===
+
+Natural ventilation is the ventilation of a building with outside air without using fans or other mechanical systems. It can be via operable windows, louvers, or trickle vents when spaces are small and the architecture permits. ASHRAE defined Natural ventilation as the flow of air through open windows, doors, grilles, and other planned building envelope penetrations, and as being driven by natural and/or artificially produced pressure differentials.
+Natural ventilation strategies also include cross ventilation, which relies on wind pressure differences on opposite sides of a building. By strategically placing openings, such as windows or vents, on opposing walls, air is channeled through the space to enhance cooling and ventilation. Cross ventilation is most effective when there are clear, unobstructed paths for airflow within the building.
+In more complex schemes, warm air is allowed to rise and flow out high building openings to the outside (stack effect), causing cool outside air to be drawn into low building openings. Natural ventilation schemes typically use very little energy, but are sensitive to environmental factors. In warm or humid climates, maintaining thermal comfort solely via natural ventilation might not be possible. Air conditioning systems are used, either as backups or supplements. Air-side economizers also use outside air to condition spaces, but do so using fans, ducts, dampers, and control systems to introduce and distribute cool outdoor air when appropriate.
+A component of natural ventilation is air change rate or air changes per hour: the hourly rate of ventilation divided by the volume of the space. For example, six air changes per hour means an amount of new air, equal to the volume of the space, is added every ten minutes. For human comfort, a minimum of four air changes per hour is typical, though warehouses might have only two. Too high of an air change rate may be uncomfortable, akin to a wind tunnel which has thousands of changes per hour. The highest air change rates are for crowded spaces, bars, night clubs, commercial kitchens at around 30 to 50 air changes per hour.
+Room pressure can be either positive or negative with respect to outside the room. Positive pressure occurs when there is more air being supplied than exhausted, and is common to reduce the infiltration of outside contaminants.
+
+
+=== Airborne diseases ===
+Natural ventilation  is a factor in reducing the spread of airborne illnesses such as tuberculosis, the common cold, influenza, meningitis or COVID-19. Opening doors and windows are ways to maximize natural ventilation, making the risk of airborne contagion much lower. Natural ventilation requires little maintenance and is inexpensive. Ventilation is measured in terms of Air Changes Per Hour (ACH). As of 2023, the CDC recommends that all spaces have a minimum of 5 ACH. For hospital rooms with airborne contagions the CDC recommends a minimum of 12 ACH. The challenges in facility ventilation are public unawareness, ineffective government oversight, poor building codes that are based on comfort levels, poor system operations, poor maintenance, and lack of transparency.
+UVC or Ultraviolet Germicidal Irradiation is a function used in modern air conditioners which reduces airborne viruses, bacteria, and fungi, through the use of LED UV light that emits across the evaporator. Air is guided through the sterilization module’s irradiation range, rendering viruses inactive.
+
+
+== Air conditioning ==
+
+An air conditioning system, or a standalone air conditioner, provides cooling and/or humidity control for all or part of a building. Air conditioned buildings often have sealed windows, because open windows would work against the system intended to maintain constant indoor air conditions. Outside, fresh air is generally drawn into the system by a vent into a mix air chamber for mixing with the space return air. Then the mixture air enters an indoor or outdoor heat exchanger section where the air is to be cooled down, then be guided to the space creating positive air pressure. The percentage of return air made up of fresh air can usually be manipulated by adjusting the opening of this vent. Typical fresh air intake is about 10% of the total supply air.
+Air conditioning and refrigeration are provided through the removal of heat. Heat can be removed through radiation, convection, or conduction. The heat transfer medium is a refrigeration system, such as water, air, ice, and chemicals are referred to as refrigerants. A refrigerant is employed either in a heat pump system in which a compressor is used to drive thermodynamic refrigeration cycle, or in a free cooling system that uses pumps to circulate a cool refrigerant (typically water or a glycol mix).
+
+
+=== Refrigeration cycle ===
+
+The refrigeration cycle uses four essential elements to cool, which are the compressor, condenser, metering device, and evaporator.
+
+At the inlet of a compressor, the refrigerant inside the system is in a low pressure, low temperature, gaseous state. The compressor pumps the refrigerant gas up to high pressure and temperature.
+From there it enters a heat exchanger (sometimes called a condensing coil or condenser) where it loses heat to the outside, cools, and condenses into its liquid phase.
+An expansion valve (also called metering device) regulates the refrigerant liquid to flow at the proper rate.
+The liquid refrigerant is returned to another heat exchanger where it is allowed to evaporate, hence the heat exchanger is often called an evaporating coil or evaporator. As the liquid refrigerant evaporates it absorbs heat from the inside air, returns to the compressor, and repeats the cycle. In the process, heat is absorbed from indoors and transferred outdoors, resulting in cooling of the building.
+In variable climates, the system may include a reversing valve that switches from heating in winter to cooling in summer. By reversing the flow of refrigerant, the heat pump refrigeration cycle is changed from cooling to heating or vice versa. This allows a facility to be heated and cooled by a single piece of equipment by the same means, and with the same hardware.
+
+
+=== Free cooling ===
+
+Free cooling systems are sometimes combined with seasonal thermal energy storage so that the cold of winter can be used for summer air conditioning. Common storage mediums are deep aquifers or natural underground rock masses accessed via a cluster of small-diameter, heat-exchanger-equipped boreholes. Some systems with small storages are hybrids that use free cooling early in the cooling season and subsequently use a heat pump to chill the circulation coming from the storage. The heat pump is added because the storage acts as a heat sink when the system is in cooling (as opposed to charging) mode, causing the temperature to gradually increase during the cooling season.
+Some systems include an "economizer mode", which is sometimes called a "free-cooling mode". When economizing, the control system will open (fully or partially) the outside air damper and close (fully or partially) the return air damper. This will cause fresh, outside air to be supplied to the system. When the outside air is cooler than the demanded cool air, this will allow the demand to be met without using the mechanical supply of cooling (typically chilled water or a direct expansion "DX" unit), thus saving energy. The control system can compare the temperature of the outside air vs. return air, or it can compare the enthalpy of the air, as is frequently done in climates where humidity is more of an issue. In both cases, the outside air must be less energetic than the return air for the system to enter the economizer mode.
+
+
+=== Packaged split system ===
+Central, "all-air" air-conditioning systems (or package systems) with a combined outdoor condenser/evaporator unit are often installed in North American residences, offices, and public buildings, but are difficult to retrofit (install in a building that was not designed to receive it) because of the bulky air ducts required. Outside of North America, packaged systems are only used in limited applications involving large indoor space such as stadiums, theatres or exhibition halls.
+An alternative to packaged systems is the use of separate indoor and outdoor coils in split systems. Split systems are preferred and widely used worldwide except in North America. In North America, split systems are most often seen in residential applications, but they are gaining popularity in small commercial buildings. Split systems are used where ductwork is not feasible or where the space conditioning efficiency is of prime concern. The benefits of ductless air conditioning systems include easy installation, no ductwork, and greater zonal control. In space conditioning, the duct losses can account for 30% of energy consumption. The use of minisplits can result in energy savings in space conditioning as there are no losses associated with ducting.
+With the split system, the evaporator coil is connected to a remote condenser unit using refrigerant piping between an indoor and outdoor unit instead of ducting air directly from the outdoor unit. Indoor units with directional vents mount onto walls, suspended from ceilings, or fit into the ceiling. Other indoor units mount inside the ceiling cavity so that short lengths of duct handle air from the indoor unit to vents or diffusers around the rooms.
+Split systems are more efficient and the footprint is typically smaller than the package systems. On the other hand, package systems tend to have a slightly lower indoor noise level compared to split systems since the fan motor is located outside.
+
+
+=== Dehumidification ===
+Dehumidification (air drying) in an air conditioning system is provided by the evaporator. Since the evaporator operates at a temperature below the dew point, moisture in the air condenses on the evaporator coil tubes. This moisture is collected at the bottom of the evaporator in a pan and removed by piping to a central drain or onto the ground outside.
+A dehumidifier is an air-conditioner-like device that controls the humidity of a room or building. It is often employed in basements that have a higher relative humidity because of their lower temperature (and propensity for damp floors and walls). In food retailing establishments, large open chiller cabinets are highly effective at dehumidifying the internal air. Conversely, a humidifier increases the humidity of a building.
+The HVAC components that dehumidify the ventilation air deserve careful attention because outdoor air constitutes most of the annual humidity load for nearly all buildings.
+
+
+=== Humidification ===
+
+A humidifier is a household appliance or device designed to increase the moisture level in the air within a room or an enclosed space. It achieves this by emitting water droplets or steam into the surrounding air, thereby raising the humidity.
+In the home, point-of-use humidifiers are commonly used to humidify a single room, while whole-house or furnace humidifiers, which connect to a home's HVAC system, provide humidity to the entire house. Medical ventilators often include humidifiers for increased patient comfort. Large humidifiers are used in commercial, institutional, or industrial contexts, often as part of a larger HVAC system.
+
+
+=== Maintenance ===
+Nearly every modern air conditioning system, even small window package units, is equipped with an internal air filter or electrostatic precipitator. The filters may range from a lightweight gauze-like material to a heavier-duty pleated mat composed of borosilicate glass fibers. Filters are typically replaced or washed as conditions warrant. For example, a building in a dusty environment or a home with furry pets will need to have the filters changed more often than interior spaces without these dirt loads. Failure to replace these filters as needed can contribute to a lower heat exchange rate, resulting in wasted energy, shortened equipment life, and higher energy bills. Low airflow can result in iced-over evaporator coils, which can completely stop airflow. Additionally, very dirty or plugged filters can cause overheating during a heating cycle, which can result in damage to the system or even fire.
+Because an air conditioner moves heat between the indoor coil and the outdoor coil, both must be kept clean. This means that, in addition to replacing the air filter at the evaporator coil, it is also necessary to regularly clean the condenser coil. Failure to keep the condenser clean will eventually result in harm to the compressor because the condenser coil is responsible for discharging both the indoor heat (as picked up by the evaporator) and the heat generated by the electric motor driving the compressor.
+
+
+== Energy efficiency ==
+HVAC systems play a key role in improving the energy efficiency of buildings, as the building sector accounts for one of the highest shares of global energy consumption. Since the 1980s, HVAC equipment manufacturers have focused on improving system efficiency. Initially, these efforts were driven by rising energy costs, but in recent years, environmental sustainability and stricter efficiency regulations have become the primary motivators. Additionally, improving HVAC system efficiency can enhance indoor air quality, which may lead to better occupant health, comfort, and productivity. In the US, the EPA has imposed tighter restrictions over the years. There are several methods for making HVAC systems more efficient.
+
+
+=== Heating energy ===
+In the past, water heating was more efficient for heating buildings and was the standard in the United States. Today, forced air systems can double for air conditioning and are more popular.
+Energy efficiency can be improved in central heating systems by using zoned heating. This allows a more granular application of heat, similar to non-central heating systems. Zones are controlled by multiple thermostats. In water heating systems the thermostats control zone valves, and in forced air systems they control zone dampers inside the vents which selectively block the flow of air. 
+Forecasting is another method of controlling building heating by calculating the demand for heating energy that should be supplied to the building in each time unit.
+
+
+=== Ground source heat pump ===
+
+Ground source, or geothermal, heat pumps are similar to ordinary heat pumps, but instead of transferring heat to or from outside air, they rely on the stable, even temperature of the earth to provide heating and air conditioning. Many regions experience seasonal temperature extremes, which would require large-capacity heating and cooling equipment to heat or cool buildings. For example, a conventional heat pump system used to heat a building in Montana's −57 °C (−70 °F) low temperature or cool a building in the highest temperature ever recorded in the US—57 °C (134 °F) in Death Valley, California, in 1913 would require a large amount of energy due to the extreme difference between inside and outside air temperatures. A metre below the earth's surface, however, the ground remains at a relatively constant temperature. Utilizing this large source of relatively moderate temperature earth, a heating or cooling system's capacity can often be significantly reduced. Although ground temperatures vary according to latitude, at 1.8 metres (6 ft) underground, temperatures generally only range from 7 to 24 °C (45 to 75 °F).
+
+
+=== Solar air conditioning ===
+
+Photovoltaic solar panels can potentially decrease the operating cost of air conditioning. Traditional air conditioners run using alternating current, and hence, any direct-current solar power needs to be inverted to be compatible with these units. New variable-speed DC-motor units allow solar power to more easily run them since this conversion is unnecessary, and since the motors are tolerant of voltage fluctuations associated with variance in supplied solar power (e.g., due to cloud cover).
+
+
+=== Ventilation energy recovery ===
+Energy recovery systems sometimes utilize heat recovery ventilation or energy recovery ventilation systems that employ heat exchangers or enthalpy wheels to recover sensible or latent heat from exhausted air. This is done by transfer of energy from the stale air inside the home to the incoming fresh air from outside.
+
+
+=== Air conditioning energy ===
+The performance of vapor compression refrigeration cycles is limited by thermodynamics. These air conditioning and heat pump devices move heat rather than convert it from one form to another, so thermal efficiencies do not appropriately describe the performance of these devices. The Coefficient of performance (COP) measures performance, but this dimensionless measure has not been adopted. Instead, the Energy Efficiency Ratio (EER) has traditionally been used to characterize the performance of many HVAC systems. EER is the Energy Efficiency Ratio based on a 35 °C (95 °F) outdoor temperature. To more accurately describe the performance of air conditioning equipment over a typical cooling season a modified version of the EER, the Seasonal Energy Efficiency Ratio (SEER), or in Europe the ESEER, is used. SEER ratings are based on seasonal temperature averages instead of a constant 35 °C (95 °F) outdoor temperature. The current industry minimum SEER rating is 14 SEER. Engineers have pointed out some areas where efficiency of the existing hardware could be improved. For example, the fan blades used to move the air are usually stamped from sheet metal, an economical method of manufacture, but as a result they are not aerodynamically efficient. A well-designed blade could reduce the electrical power required to move the air by a third.
+
+
+=== Demand-controlled kitchen ventilation ===
+
+Demand-controlled kitchen ventilation (DCKV) is a building controls approach to controlling the volume of kitchen exhaust and supply air in response to the actual cooking loads in a commercial kitchen. Traditional commercial kitchen ventilation systems operate at 100% fan speed independent of the volume of cooking activity and DCKV technology changes that to provide significant fan energy and conditioned air savings. By deploying smart sensing technology, both the exhaust and supply fans can be controlled to capitalize on the affinity laws for motor energy savings, reduce makeup air heating and cooling energy, increasing safety, and reducing ambient kitchen noise levels.
+
+
+== Air filtration and cleaning ==
+
+Air cleaning and filtration removes particles, contaminants, vapors and gases from the air. The filtered and cleaned air then is used in heating, ventilation, and air conditioning.
+Clean air delivery rate (CADR) is the amount of clean air an air cleaner provides to a room or space. When determining CADR, the amount of airflow in a space is taken into account. For example, an air cleaner with a flow rate of 30 cubic metres (1,000 ft3) per minute and an efficiency of 50% has a CADR of 15 cubic metres (500 ft3) per minute. Filtration performance determines the fraction of airborne particles, including allergens, bacteria, and fine particulate matter, removed from recirculated air. This depends on the size of the particle or fiber, the filter packing density and depth, and the airflow rate.
+
+
+== Industry and standards ==
+The HVAC industry includes equipment manufacturing, system design, installation, operation, maintenance, sales, education, and research. The HVAC industry was historically regulated by the manufacturers of HVAC equipment, but regulating and standards organizations such as HARDI (Heating, Air-conditioning and Refrigeration Distributors International), ASHRAE, SMACNA, ACCA (Air Conditioning Contractors of America), Uniform Mechanical Code, International Mechanical Code, and AMCA have been established to support the industry. UL is an omnibus agency and is not specific to the HVAC industry.
+
+
+=== International ===
+ISO 16813:2006 is one of the ISO building environment standards. It establishes the general principles of building environment design. It takes into account the need to provide a healthy indoor environment for the occupants as well as the need to protect the environment for future generations and promote collaboration among the various parties involved in building environmental design for sustainability. ISO16813 is applicable to new construction and the retrofit of existing buildings.
+The building environmental design standard aims to:
+
+provide the constraints concerning sustainability issues from the initial stage of the design process, with building and plant life cycle to be considered together with owning and operating costs from the beginning of the design process;
+assess the proposed design with rational criteria for indoor air quality, thermal comfort, acoustical comfort, visual comfort, energy efficiency, and HVAC system controls at every stage of the design process;
+iterate decisions and evaluations of the design throughout the design process.
+
+
+=== United States ===
+
+
+==== Licensing ====
+
+In the United States, federal licensure is generally handled by EPA certified for installation and service of HVAC devices.
+Many U.S. states have licensing for boiler operation. Some of these are listed as follows:
+
+Arkansas
+Georgia
+Michigan
+Minnesota
+Montana
+New Jersey
+North Dakota
+Ohio
+Oklahoma
+Oregon
+
+
+==== Societies ====
+
+Many HVAC engineers are members of the American Society of Heating, Refrigerating, and Air-Conditioning Engineers (ASHRAE). ASHRAE publishes recognized standards for HVAC design, which are updated every four years. Another popular society is AHRI, which provides regular information on new refrigeration technology, and publishes relevant standards and codes.
+
+
+==== Codes ====
+American design standards are legislated in the Uniform Mechanical Code or International Mechanical Code. In certain states, counties, or cities, either of these codes may be adopted and amended via various legislative processes. These codes are updated and published by the International Association of Plumbing and Mechanical Officials (IAPMO) or the International Code Council (ICC) respectively, on a 3-year code development cycle. Typically, local building permit departments are charged with enforcement of these standards on private and certain public properties.
+
+
+==== Technicians ====
+
+An HVAC technician is a tradesman who specializes in heating, ventilation, air conditioning, and refrigeration. HVAC technicians in the US can receive training through formal training institutions, where most earn associate degrees. Training for HVAC technicians includes classroom lectures and hands-on tasks, and can be followed by an apprenticeship wherein the recent graduate works alongside a professional HVAC technician for a temporary period. HVAC techs who have been trained can also be certified in areas such as air conditioning, heat pumps, gas heating, and commercial refrigeration.
+
+
+=== United Kingdom ===
+The Chartered Institution of Building Services Engineers is a body that covers the essential Service (systems architecture) that allow buildings to operate. It includes the electrotechnical, heating, ventilating, air conditioning, refrigeration and plumbing industries. To train as a building services engineer, the typical academic entry requirements include qualifications in mathematics and science, such as GCSEs (A-C) in England or Standard Grades (1-3) in Scotland. Employers will often want a degree in a branch of engineering, such as building environment engineering, electrical engineering or mechanical engineering. To become a full member of CIBSE, and so also to be registered by the Engineering Council UK as a chartered engineer, engineers must also attain an Honours Degree and a master's degree in a relevant engineering subject. CIBSE publishes several guides to HVAC design relevant to the UK market, and also the Republic of Ireland, Australia, New Zealand and Hong Kong. These guides include various recommended design criteria and standards, some of which are cited within the UK building regulations, and therefore form a legislative requirement for major building services works. The main guides are:
+
+Guide A: Environmental Design
+Guide B: Heating, Ventilating, Air Conditioning and Refrigeration
+Guide C: Reference Data
+Guide D: Transportation systems in Buildings
+Guide E: Fire Safety Engineering
+Guide F: Energy Efficiency in Buildings
+Guide G: Public Health Engineering
+Guide H: Building Control Systems
+Guide J: Weather, Solar and Illuminance Data
+Guide K: Electricity in Buildings
+Guide L: Sustainability
+Guide M: Maintenance Engineering and Management
+Within the construction sector, it is the job of the building services engineer to design and oversee the installation and maintenance of the essential services such as gas, electricity, water, heating and lighting. Building Services is part of a sector that has over 51,000 businesses and represents 2–3% of the GDP.
+
+
+=== Australia ===
+The Air Conditioning and Mechanical Contractors Association of Australia (AMCA), Australian Institute of Refrigeration, Air Conditioning and Heating (AIRAH), Australian Refrigeration Mechanical Association and CIBSE are responsible.
+
+
+=== Asia ===
+Asian architectural temperature-control have different priorities than European methods. For example, Asian heating traditionally focuses on maintaining temperatures of objects such as the floor or furnishings such as Kotatsu tables and directly warming people, as opposed to the Western focus, in modern periods, on designing air systems.
+
+
+==== Philippines ====
+The Philippine Society of Ventilating, Air Conditioning and Refrigerating Engineers (PSVARE) along with Philippine Society of Mechanical Engineers (PSME) govern on the codes and standards for HVAC / MVAC (MVAC means "mechanical ventilation and air conditioning") in the Philippines.
+
+
+==== India ====
+The Indian Society of Heating, Refrigerating and Air Conditioning Engineers (ISHRAE) was established to promote the HVAC industry in India. ISHRAE is an associate of ASHRAE. ISHRAE was founded at New Delhi in 1981 and a chapter was started in Bangalore in 1989. Between 1989 & 1993, ISHRAE chapters were formed in all major cities in India.
+
+
+== See also ==
+
+
+== References ==
+
+
+== Further reading ==
+
+
+== External links ==
+American Society of Heating, Refrigerating and Air-Conditioning Engineers

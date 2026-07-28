@@ -5,30 +5,52 @@ returns the article body as plain text, without markup, infoboxes or
 references. Each article lands in wiki_corpus/<name>.txt with a small
 attribution header (Wikipedia text is licensed CC BY-SA 4.0).
 
-Run:  python download_wiki.py
+Run:  python download_wiki.py                 (all topics)
+      python download_wiki.py smart_building  (one topic)
 Only the standard library is needed.
 """
 
 import json
+import sys
 import urllib.parse
 import urllib.request
 from pathlib import Path
 
-TITLES = [
-    "Automotive industry",
-    "Car",
-    "Electric vehicle",
-    "Hybrid electric vehicle",
-    "Internal combustion engine",
-    "Self-driving car",
-    "Automotive safety",
-    "Automotive engineering",
-    "CAN bus",
-    "Charging station",
-]
+TOPICS = {
+    "auto": [
+        "Automotive industry",
+        "Car",
+        "Electric vehicle",
+        "Hybrid electric vehicle",
+        "Internal combustion engine",
+        "Self-driving car",
+        "Automotive safety",
+        "Automotive engineering",
+        "CAN bus",
+        "Charging station",
+    ],
+    "smart_building": [
+        "Building automation",
+        "Home automation",
+        "Heating, ventilation, and air conditioning",
+        "Internet of things",
+        "Smart meter",
+        "Smart grid",
+        "Smart thermostat",
+        "BACnet",
+        "KNX",
+        "Digital twin",
+    ],
+}
+
+# topic -> output directory ("auto" keeps its original folder name)
+CORPUS_DIRS = {
+    "auto": "wiki_corpus",
+    "smart_building": "wiki_corpus_smart_building",
+}
 
 API = "https://en.wikipedia.org/w/api.php"
-OUT = Path(__file__).resolve().parent / "wiki_corpus"
+ROOT = Path(__file__).resolve().parent
 
 
 def fetch_plain_text(title: str) -> str:
@@ -52,9 +74,11 @@ def fetch_plain_text(title: str) -> str:
     return page["extract"]
 
 
-def main() -> None:
-    OUT.mkdir(exist_ok=True)
-    for title in TITLES:
+def download_topic(topic: str) -> None:
+    out = ROOT / CORPUS_DIRS[topic]
+    out.mkdir(exist_ok=True)
+    print(f"[{topic}] -> {out.name}/")
+    for title in TOPICS[topic]:
         text = fetch_plain_text(title)
         url = "https://en.wikipedia.org/wiki/" + title.replace(" ", "_")
         header = (
@@ -63,10 +87,18 @@ def main() -> None:
             f"License: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)\n"
             f"{'=' * 70}\n\n"
         )
-        filename = title.lower().replace(" ", "_").replace("-", "_") + ".txt"
-        path = OUT / filename
-        path.write_text(header + text, encoding="utf-8")
-        print(f"{filename}: {len(text):,} chars")
+        filename = (title.lower().replace(",", "").replace(" ", "_")
+                    .replace("-", "_") + ".txt")
+        (out / filename).write_text(header + text, encoding="utf-8")
+        print(f"  {filename}: {len(text):,} chars")
+
+
+def main() -> None:
+    requested = sys.argv[1:] or list(TOPICS)
+    for topic in requested:
+        if topic not in TOPICS:
+            sys.exit(f"Unknown topic '{topic}'. Available: {', '.join(TOPICS)}")
+        download_topic(topic)
 
 
 if __name__ == "__main__":
