@@ -18,9 +18,9 @@ def main():
     response = client.chat.completions.create(
        model="qwen3-0.6b",
        messages=[
-           {"role": "system", "content": "You are helpful assistant. "}, # typical system prompt of a chatbot
+           {"role": "system", "content": "You are helpful assistant. For each your answer, provide a citation."}, # typical system prompt of a chatbot
            #{"role": "user", "content": "In Python, 0.1 + 0.2 == 0.3 is false. Explain in one sentence why?"}
-           {"role": "user", "content": "Who predicted that The next era of information technology will be dominated by [IoT] devices?"}
+           {"role": "user", "content": "Who predicted that the next era of information technology will be dominated by [IoT] devices?"}
 
            # Who forecast in 2004 that connected devices would take over the next generation of IT?
            # Who said IoT would dominate the future of information technology?
@@ -59,7 +59,6 @@ def demo_in_context():
                 {"role": "user", "content": "Please send me one laptop, no rush."}, # query
                 {"role": "assistant", "content": '{"item": "laptop", "quantity": 1, "deadline", "undefined"}'}, # answer
                 {"role": "user", "content": "We require five docking stations by the end of September."}, 
-
             ]
     )
     print(response.choices[0].message.content) 
@@ -229,8 +228,8 @@ def summary_extraction():
     text = "The Silent Parade was a protest march in New York City on July 28, 1917. The goal was to draw attention to the racial violence and entrenched systemic discrimination endured by African Americans. The march was precipitated by racially motivated attacks in 1916 and 1917, including the East St. Louis massacre, and lynchings in Waco and in Memphis. The parade was organized by a coalition of African-American groups, led by the recently formed NAACP. Starting at 57th Street, the parade route proceeded down Fifth Avenue, ending at Madison Square. It was a silent procession, with an estimated 8,000 to 15,000 African Americans marching in protest, accompanied by a muffled drumbeat. Organizers hoped that the parade would prompt the federal government to enact anti-lynching legislation, but President Woodrow Wilson did not act on their demands. Lynchings persisted in the United States into the 1960s. "
 
 
-#main()
-demo_tool_calling_python()
+main()
+#demo_tool_calling_python()
 #demo_multi_turn()
 #demo_in_context()
 #demo_temperature()
