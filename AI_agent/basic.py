@@ -18,9 +18,13 @@ def main():
     response = client.chat.completions.create(
        model="qwen3-0.6b",
        messages=[
-           {"role": "system", "content": "You are helpful assistant. Answer only in datetime format!"}, # typical system prompt of a chatbot
+           {"role": "system", "content": "You are helpful assistant. "}, # typical system prompt of a chatbot
            #{"role": "user", "content": "In Python, 0.1 + 0.2 == 0.3 is false. Explain in one sentence why?"}
-           {"role": "user", "content": "What time is it?"} 
+           {"role": "user", "content": "Who predicted that The next era of information technology will be dominated by [IoT] devices?"}
+
+           # Who forecast in 2004 that connected devices would take over the next generation of IT?
+           # Who said IoT would dominate the future of information technology?
+
        ] 
     )
 
@@ -147,15 +151,88 @@ def demo_tool_calling():
     print(f"final answer:   {response.choices[0].message.content}")
 
 
+def demo_tool_calling_python(model="qwen3-0.6b"):
+    # harder tasks (e.g. "also print the first line of every .py file") overwhelm
+    # the 0.6b model — it loops on its own syntax errors; use qwen/qwen3.5-35b-a3b then
+
+    def run_python(code):
+        import io, contextlib
+        buffer = io.StringIO()
+        try:
+            with contextlib.redirect_stdout(buffer):
+                exec(code, {})
+        except Exception as e:
+            return f"Error: {e}"
+        return buffer.getvalue() or "(code produced no output — use print())"
+
+    tools = [
+        {
+            "type": "function",
+            "function": {
+                "name": "run_python",
+                "description": "Execute Python code and return what it prints. Use for any calculation.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "code": {"type": "string", "description": "Python code, must print() the result"}
+                    },
+                    "required": ["code"],
+                },
+            },
+        }
+    ]
+
+    messages = [
+        {"role": "system", "content": "You are a helpful assistant. To answer questions, write Python code and run it with the run_python tool."},
+        {"role": "user", "content": "Which files are in the current directory?"}
+    ]
+
+    # agent loop: keep executing tool calls until the model answers in plain text
+    for step in range(5):
+        response = client.chat.completions.create(
+            model=model,
+            messages=messages,
+            tools=tools,
+            temperature=0.0,
+        )
+        msg = response.choices[0].message
+
+        if not msg.tool_calls:
+            print(f"final answer:   {msg.content}")
+            break
+
+        # append a clean dict, not the raw msg object: LM Studio also returns
+        # reasoning_content, which confuses the model when echoed back
+        messages.append({
+            "role": "assistant",
+            "content": msg.content,
+            "tool_calls": [tc.model_dump() for tc in msg.tool_calls],
+        })
+        for tool_call in msg.tool_calls:
+            args = json.loads(tool_call.function.arguments)  # arguments arrive as JSON string
+            print(f"--- step {step}: model wants to run ---")
+            print(args["code"])
+
+            # human in the loop: never exec model code without user approval
+            if input("execute this code? [y/N] ").strip().lower() == "y":
+                result = run_python(args["code"])
+                print(f"interpreter output: {result}")
+            else:
+                result = "The user rejected the execution of this code."
+                print("skipped.")
+            messages.append({"role": "tool", "tool_call_id": tool_call.id, "content": result})
+
+
 def summary_extraction():
     # TODO
     # Extract important dates and information structurally from the given text
     text = "The Silent Parade was a protest march in New York City on July 28, 1917. The goal was to draw attention to the racial violence and entrenched systemic discrimination endured by African Americans. The march was precipitated by racially motivated attacks in 1916 and 1917, including the East St. Louis massacre, and lynchings in Waco and in Memphis. The parade was organized by a coalition of African-American groups, led by the recently formed NAACP. Starting at 57th Street, the parade route proceeded down Fifth Avenue, ending at Madison Square. It was a silent procession, with an estimated 8,000 to 15,000 African Americans marching in protest, accompanied by a muffled drumbeat. Organizers hoped that the parade would prompt the federal government to enact anti-lynching legislation, but President Woodrow Wilson did not act on their demands. Lynchings persisted in the United States into the 1960s. "
 
 
-main()
+#main()
+demo_tool_calling_python()
 #demo_multi_turn()
 #demo_in_context()
 #demo_temperature()
 #demo_structured_output()
-demo_tool_calling()
+#demo_tool_calling()

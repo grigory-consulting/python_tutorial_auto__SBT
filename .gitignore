@@ -1,3 +1,4 @@
-project/__pycache__/
+__pycache__/
 .venv/
 AI_agent/wiki_corpus*/embeddings.json
+AI_agent/__pycache__/rag.cpython-311.pyc
