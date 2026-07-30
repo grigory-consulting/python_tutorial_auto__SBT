@@ -11,14 +11,18 @@ client = OpenAI(base_url="http://localhost:1234/v1", api_key="lm-studio")
 CHAT_MODEL = "qwen3-0.6b"
 EMBEDDING_MODEL = "text-embedding-nomic-embed-text-v1.5" # LM Studio standard embedding 
 CHUNK_SIZE = 1500 # characters, approx. 350 tokens 
-TOP_K = 3 # best 3 chunks 
+TOP_K = 10 # best 3 chunks 
 
 # nomic requires prefixes
 DOC_PREFIX = "search_document: "
 QUERY_PREFIX = "search_query: "
 
-QUESTION = "Who predicted that the next era of information technology will be dominated by IoT devices?"
+#QUESTION = "Who predicted that the next era of information technology will be dominated by IoT devices?"
 QUESTION2 = "Who forecast in 2004 that connected devices would take over the next generation of IT?"
+#QUESTION3 = "What are protocols and industry standards in building automation systems?"
+#QUESTION4 = "Which book is doi:10.1007/978-3-031-21343-4 ?"
+QUESTION5 = "What is the difference between Asian and European temperature control methods?"
+
 
 CORPUS_DIR = Path(__file__).resolve().parent / "wiki_corpus_smart_building"
 
@@ -80,6 +84,7 @@ def answer(question, corpus):
     hits = retrieve(embeddings=embeddings,question=question)
 
     context = "\n\n---\n\n".join(f"[{h['file']}]\n{h['text']}" for h in hits) # Augmentation 
+
     response = client.chat.completions.create(
         model=CHAT_MODEL,
         messages=[
@@ -92,4 +97,4 @@ def answer(question, corpus):
     )
     print(f"\n{response.choices[0].message.content.strip()}")
 
-answer(QUESTION,CORPUS_DIR)
+answer(QUESTION5,CORPUS_DIR)
