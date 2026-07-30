@@ -113,14 +113,29 @@ def system_prompt():
 
 
 def run_query(messages):
+    for _ in range(20): # 20 ... is maximum number of tool calls 
+        response = client.chat.completions.create(
+            model=MODEL, messages=messages, tools = TOOLS
+        )
 
-    response = client.chat.completions.create(
-        model=MODEL, messages=messages, tools = TOOLS
-    )
+        msg = response.choices[0].message
 
-    msg = response.choices[0].message
+        if not msg.tool_calls: # we are done 
+            print(msg.content)
+            return # escape the function 
+        messages.append(msg)
 
-    print(msg.content)
+        # call the tools
+        for call in msg.tool_calls:
+                arguments = json.loads(call.function.arguments)
+                result = available_tools[call.function.name](**arguments)
+                messages.append(
+                    {
+                        "role": "tool",
+                        "tool_call_id": call.id,
+                        "content": str(result)
+                    }
+                )
 
 def main():
     messages = [{"role": "system", "content": system_prompt()}]
