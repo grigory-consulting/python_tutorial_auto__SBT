@@ -14,6 +14,7 @@ BASE_URL = "http://localhost:1234/v1"
 API_KEY = "lm-studio"
 client = OpenAI(base_url=BASE_URL, api_key=API_KEY) # later you can switch to other API 
 MODEL = "qwen3-0.6b"
+MODEL = "qwen/qwen3.6-35b-a3b"
 ROOT = Path(__file__).resolve().parent # AI_agent/agent
 SOUL = ROOT / "SOUL.md"
 MEMORY = ROOT / "MEMORY.md" 
