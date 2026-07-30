@@ -17,19 +17,85 @@ MODEL = "qwen3-0.6b"
 ROOT = Path(__file__).resolve().parent # AI_agent/agent
 SOUL = ROOT / "SOUL.md"
 MEMORY = ROOT / "MEMORY.md" 
-TOOLS = []
-
-def read_file(file):
-    pass
-
-def write_file(file, content):
-    pass
+TOOLS = [{
+        "type": "function",
+        "function": {
+            "name": "run_shell",
+            "description": "Run a shell command and return stdout+stderr. "
+                           "The user must confirm every command.",
+            "parameters": {
+                "type": "object",
+                "properties": {"command": {"type": "string"}},
+                "required": ["command"],
+            },
+        },
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "read_file",
+            "description": "Read a text file and return its content.",
+            "parameters": {
+                "type": "object",
+                "properties": {"path": {"type": "string"}},
+                "required": ["path"],
+            },
+        },
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "write_file",
+            "description": "Write text to a file (overwrites).",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "path": {"type": "string"},
+                    "content": {"type": "string"},
+                },
+                "required": ["path", "content"],
+            },
+        },
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "save_memory",
+            "description": "Append one durable fact about the user or the ongoing "
+                           "work to MEMORY.md. Use for things worth remembering "
+                           "across sessions, not for conversation details.",
+            "parameters": {
+                "type": "object",
+                "properties": {"fact": {"type": "string"}},
+                "required": ["fact"],
+            },
+        },
+    },]
 
 def run_shell(command):
-    pass 
+    print(f"\n  [tool] run_bash: {command}")
+    if input("  execute? [y/N] ").strip().lower() != "y":
+        return "User declined to run this command."
+    result = subprocess.run(command, shell=True, capture_output=True,
+                            text=True, timeout=60)
+    return (result.stdout + result.stderr)[-4000:] or "(no output)"
 
-def save_memory(fact):
-    pass 
+
+def read_file(path: str) -> str:
+    return Path(path).expanduser().read_text()[:8000]
+
+
+def write_file(path: str, content: str) -> str:
+    p = Path(path).expanduser()
+    p.parent.mkdir(parents=True, exist_ok=True)
+    p.write_text(content)
+    return f"Wrote {len(content)} chars to {p}"
+
+
+def save_memory(fact: str) -> str:
+    with MEMORY.open("a") as f:
+        f.write(f"- {date.today()}: {fact}\n")
+    return "Saved."
 
 available_tools = {
     "run_shell" : run_shell,
